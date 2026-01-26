@@ -15,7 +15,7 @@ export function Navbar() {
 
       <div className="hidden md:flex items-center gap-8">
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors outline-none">
+          <DropdownMenuTrigger className="flex items-center gap-1 text-base font-semibold text-muted-foreground hover:text-foreground transition-colors outline-none">
             Projects
             <ChevronDown className="w-4 h-4" />
           </DropdownMenuTrigger>
@@ -32,7 +32,7 @@ export function Navbar() {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        <Link href="/#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <Link href="/#about" className="text-base font-semibold text-muted-foreground hover:text-foreground transition-colors">
           About
         </Link>
       </div>
