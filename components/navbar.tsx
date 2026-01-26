@@ -21,18 +21,18 @@ export function Navbar() {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="center" className="w-48">
             <DropdownMenuItem asChild>
-              <Link href="/#tech" className="cursor-pointer">
+              <Link href="#tech" className="cursor-pointer">
                 Tech
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <Link href="/#documentaries" className="cursor-pointer">
+              <Link href="#documentaries" className="cursor-pointer">
                 Documentaries
               </Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        <Link href="/#about" className="text-base font-semibold text-muted-foreground hover:text-foreground transition-colors">
+        <Link href="#about" className="text-base font-semibold text-muted-foreground hover:text-foreground transition-colors">
           About
         </Link>
       </div>
