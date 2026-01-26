@@ -350,6 +350,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       src="/Captura de pantalla 2025-12-18 210907.png"
                       alt="CIO Guide Cover"
                       className="w-full h-full object-contain"
+                      loading="lazy"
                     />
                   </div>
 
@@ -401,6 +402,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       src="/67d2f2aec11554d951962758_Gestion-de-activos-empresariales.jpeg"
                       alt="EAM Article Cover"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
