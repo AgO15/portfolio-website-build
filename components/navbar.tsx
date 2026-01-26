@@ -13,29 +13,7 @@ export function Navbar() {
         <span className="font-semibold text-foreground">Agnys</span>
       </Link>
 
-      <div className="hidden md:flex items-center gap-8">
-        <DropdownMenu>
-          <DropdownMenuTrigger className="flex items-center gap-1 text-base font-semibold text-muted-foreground hover:text-foreground transition-colors outline-none">
-            Projects
-            <ChevronDown className="w-4 h-4" />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="center" className="w-48">
-            <DropdownMenuItem asChild>
-              <Link href="#tech" className="cursor-pointer">
-                Tech
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem asChild>
-              <Link href="#documentaries" className="cursor-pointer">
-                Documentaries
-              </Link>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <Link href="#about" className="text-base font-semibold text-muted-foreground hover:text-foreground transition-colors">
-          About
-        </Link>
-      </div>
+
 
       <Button size="sm" className="rounded-full" asChild>
         <a href="https://www.linkedin.com/in/agnysorellana" target="_blank" rel="noopener noreferrer">Contact</a>
