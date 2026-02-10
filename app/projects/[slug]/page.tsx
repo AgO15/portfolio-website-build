@@ -444,6 +444,81 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 </div>
               </div>
             </section>
+
+            {/* AI-Assisted Blog Articles Section */}
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-2">AI-Assisted Blog Articles</h2>
+              <p className="text-muted-foreground mb-6">
+                Health and dental content produced with AI assistance for MedBlue — a healthcare platform serving communities in Florida.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    title: "Factores de riesgo que pueden afectar a su salud ocular",
+                    description: "Riesgos para la salud ocular y cómo abordarlos en Florida. Cómo MedBlue hace que el cuidado de la vista sea accesible para todos, asegurados o no.",
+                    href: "https://medblue.com/es/factores-de-riesgo-que-pueden-afectar-a-su-salud-ocular/",
+                  },
+                  {
+                    title: "Costes de la atención dental en Florida",
+                    description: "Aprende cómo acceder a costos asequibles de atención dental en Florida, incluso sin seguro. MedBlue ofrece precios transparentes en Jacksonville, Fort Lauderdale y más.",
+                    href: "https://medblue.com/es/costes-de-la-atencion-dental-en-florida/",
+                  },
+                  {
+                    title: "Hemograma Completo (CBC) en Florida",
+                    description: "Explicación de la prueba de recuento sanguíneo completo para cualquier persona. No importa si necesita análisis de sangre asequibles en Fort Lauderdale, Jacksonville o en cualquier lugar del sur de Florida.",
+                    href: "https://medblue.com/es/hemograma-completo-cbc-en-florida/",
+                  },
+                  {
+                    title: "La importancia de los exámenes oculares rutinarios",
+                    description: "Conozca qué ocurre durante los exámenes oculares rutinarios, los problemas más comunes que se detectan y las frecuencias recomendadas para todas las edades. Proteja su vista.",
+                    href: "https://medblue.com/es/la-importancia-de-los-examenes-oculares-rutinarios/",
+                  },
+                  {
+                    title: "Análisis de sangre asequibles sin seguro",
+                    description: "Aprenda cómo obtener análisis de sangre y pruebas de laboratorio de alta calidad sin seguro. Compare los precios habituales con las opciones asequibles de Medblue, con precios transparentes.",
+                    href: "https://medblue.com/es/analisis-de-sangre-asequibles-sin-seguro/",
+                  },
+                  {
+                    title: "Planes de salud vs seguro: Costo de la atención dental en Florida",
+                    description: "Compare seguros dentales a todo riesgo en Florida frente a Medblue. Vea los precios reales de atención dental, sin esperas, y cobertura instantánea — sin necesidad de seguro.",
+                    href: "https://medblue.com/es/planes-de-salud-vs-seguro-costo-de-la-atencion-dental-florida/",
+                  },
+                  {
+                    title: "Planes de seguro dental individuales y familiares",
+                    description: "Compare los tipos, costes y cobertura de los planes dentales familiares de Florida. Vea las estadísticas clave, los cargos ocultos y cómo el plan de tarifa plana de Medblue ahorra en exámenes, empastes y coronas.",
+                    href: "https://medblue.com/es/planes-de-seguro-dental-individuales-y-familiares/",
+                  },
+                  {
+                    title: "Consulta médica gratuita en línea: ventajas",
+                    description: "Descubra las principales ventajas de las consultas médicas gratuitas en línea. Experimente la comodidad y la accesibilidad a la asistencia sanitaria desde la comodidad de su hogar.",
+                    href: "https://medblue.com/es/consulta-medica-gratuita-en-linea-ventajas/",
+                  },
+                  {
+                    title: "Cómo el sueño puede aliviar el estrés",
+                    description: "Muchas personas creen que el estrés forma parte de la vida, pero dormir mal puede empeorar los niveles de estrés. Explore los factores biológicos y cómo mejorar su descanso.",
+                    href: "https://medblue.com/es/como-el-sueno-puede-aliviar-el-estres/",
+                  },
+                ].map((blog, index) => (
+                  <div key={index} className="rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border border-border p-6 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-lg font-bold text-foreground mb-2">{blog.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">{blog.description}</p>
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white font-semibold text-xs">A</div>
+                        <div>
+                          <p className="text-xs font-medium text-foreground">Agnys</p>
+                          <p className="text-[10px] text-muted-foreground">Content Strategist &amp; Writer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href={blog.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg w-fit">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                      Read Article
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </section>
           </>
         )}
 
