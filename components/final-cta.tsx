@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button"
 export function FinalCTA() {
   return (
     <section 
-      className="section-gap relative overflow-hidden rounded-[2rem] border-t border-border shadow-2xl p-12 md:p-16 py-20 md:py-24 text-center"
-      style={{ background: 'radial-gradient(ellipse at 60% 50%, rgba(255,255,255,0.04) 0%, transparent 70%), var(--background)' }}
+      className="section-gap relative overflow-hidden rounded-[2rem] border border-zinc-800 shadow-2xl p-12 md:p-16 py-20 md:py-24 text-center bg-zinc-950"
+      style={{ background: 'radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.08) 0%, rgba(9,9,11,1) 100%)' }}
     >
       <img
-        src="/digital-creative-immersive-background.jpg"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
+        src="/modern-distributed-computing-visualization.jpg"
+        alt="Abstract background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay pointer-events-none"
       />
 
       <div className="relative z-10">

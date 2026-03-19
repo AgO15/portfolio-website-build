@@ -387,11 +387,11 @@ export function TechContentView() {
               onClick={() => setActiveIframeUrl(article.url)}
               title="Read Article"
             >
-              <div className="card-thumb rounded-md overflow-hidden bg-zinc-800 flex items-center justify-center">
+              <div className="w-24 h-16 sm:w-28 sm:h-[4.5rem] shrink-0 rounded-md overflow-hidden bg-zinc-100 dark:bg-zinc-800 border border-[var(--color-border-tertiary)] flex items-center justify-center">
                 <img 
                   src={article.thumb} 
                   alt={article.title}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
