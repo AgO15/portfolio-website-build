@@ -24,36 +24,14 @@ export function Hero() {
       {/* Social links */}
       <div className="flex items-center gap-4 mt-12">
         <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors"
-        >
-          <Twitter className="w-4 h-4" />
-        </a>
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors"
-        >
-          <Github className="w-4 h-4" />
-        </a>
-        <a
-          href="https://youtube.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors"
-        >
-          <Youtube className="w-4 h-4" />
-        </a>
-        <a
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors"
+          className="h-10 px-4 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors gap-2 group"
+          aria-label="LinkedIn"
         >
           <Linkedin className="w-4 h-4" />
+          <span className="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors">LinkedIn</span>
         </a>
       </div>
     </section>

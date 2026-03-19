@@ -2,9 +2,9 @@ import { Badge } from "@/components/ui/badge"
 
 export function SplitFeature() {
   return (
-    <section className="mt-16 grid lg:grid-cols-2 gap-8">
+    <section className="section-gap grid lg:grid-cols-2 gap-8 lg:gap-12 bg-card border border-border rounded-[2rem] p-8 md:p-12 lg:divide-x lg:divide-border/50">
       {/* Left column */}
-      <div className="rounded-[2rem] bg-card border border-border shadow-sm p-8 flex flex-col justify-center">
+      <div className="flex flex-col justify-center lg:pr-12">
         <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">About</p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-6">
           I specialize in transforming complex technical concepts into high-performing narratives that drive real business results.
@@ -15,7 +15,7 @@ export function SplitFeature() {
       </div>
 
       {/* Right column - Resume Preview */}
-      <div className="relative rounded-[2rem] bg-card border border-border shadow-lg overflow-hidden h-[500px] p-8 flex flex-col">
+      <div className="relative flex flex-col lg:pl-12 h-[500px]">
         <p className="text-xs uppercase tracking-wider text-muted-foreground mb-6">Resume Highlights</p>
 
         <div className="flex-1 space-y-6">

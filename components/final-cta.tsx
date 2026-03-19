@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button"
 
 export function FinalCTA() {
   return (
-    <section className="mt-16 relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 border border-zinc-700 shadow-2xl p-12 md:p-16 text-center">
+    <section 
+      className="section-gap relative overflow-hidden rounded-[2rem] border-t border-border shadow-2xl p-12 md:p-16 py-20 md:py-24 text-center"
+      style={{ background: 'radial-gradient(ellipse at 60% 50%, rgba(255,255,255,0.04) 0%, transparent 70%), var(--background)' }}
+    >
       <img
         src="/digital-creative-immersive-background.jpg"
         alt=""
