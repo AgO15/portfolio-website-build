@@ -23,7 +23,7 @@ export const projects: Project[] = [
     oneLiner: "A Neumorphic Personal Operating System for Cognitive & Financial Management",
     role: "Product Builder (Learning in Public)",
     year: "2025",
-    cover: "/Gemini_Generated_Image_u8osxiu8osxiu8os.png",
+    cover: "/life_os_carousel_cover.png",
     links: [
       { label: "Visit Site", href: "#" },
       { label: "GitHub", href: "#" },
