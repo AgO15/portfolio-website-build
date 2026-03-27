@@ -18,10 +18,10 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "distributed-vision-platform",
-    title: "Project Management App (AI-Assisted Personal OS)",
+    title: "Life OS (formerly Personal Project Management App)",
     category: "tech",
-    oneLiner: "An AI-first project tracker with native time tracking, notes, files, and weekly reports — built as a learning-by-building experiment.",
-    role: "Content Marketer · Product Builder (Learning in Public)",
+    oneLiner: "A Neumorphic Personal Operating System for Cognitive & Financial Management",
+    role: "Product Builder (Learning in Public)",
     year: "2025",
     cover: "/Gemini_Generated_Image_u8osxiu8osxiu8os.png",
     links: [
@@ -29,9 +29,11 @@ export const projects: Project[] = [
       { label: "GitHub", href: "#" },
     ],
     highlights: [
-      "Shipped v0.1.0 of a personal project manager with projects, tasks, notes, files, and weekly time reporting.",
-      "Implemented secure auth + Row-Level Security (RLS) on a relational SQL schema (Supabase).",
-      "Added an AI chat assistant (Gemini) to create tasks/projects with commands and reduce manual input.",
+      "Foundations: Shipped v0.1.0 of an AI-assisted personal project manager focusing on tasks, notes, files, and weekly time reporting.",
+      "Infrastructure: Implemented secure, server-side authentication and Row Level Security on a relational Supabase schema.",
+      "AI Integration: Added a Gemini-powered chat assistant for command-based task creation and workflow drafting.",
+      "The Pivot: Expanded the scope from standard \"project tracking\" to a \"Life OS\" by introducing cognitive capacity limits and a multi-currency income tracker.",
+      "Design Overhaul: Completely reimagined the user interface, migrating from a generic dark mode to a premium, tactile Neumorphic design system with bilingual (i18n) support.",
     ],
   },
   {
