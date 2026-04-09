@@ -7,10 +7,10 @@ export function SplitFeature() {
       <div className="flex flex-col justify-center lg:pr-12">
         <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">About</p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-6">
-          I specialize in transforming complex technical concepts into high-performing narratives that drive real business results.
+          I specialize in designing and managing end-to-end content operations powered by AI — from ideation and creation to execution, evaluation, and iteration.
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Combining creative storytelling with analytical rigor, I leverage SEO, CRO, and bilingual strategies to capture organic traffic, strengthen brand positioning, and generate qualified leads for international technology companies.
+          By integrating AI into every stage of the content lifecycle, I help technology companies scale their marketing operations without sacrificing quality or strategic depth.
         </p>
       </div>
 
@@ -23,17 +23,18 @@ export function SplitFeature() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-2">Experience</h4>
             <p className="text-2xl font-bold text-foreground">5+ Years</p>
-            <p className="text-sm text-muted-foreground">Content Strategy & Bilingual Copywriting</p>
+            <p className="text-sm text-muted-foreground">Content Operations & AI-Assisted Workflows</p>
           </div>
 
           {/* Key Skills */}
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-2">Core Expertise</h4>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">Content Strategy</Badge>
+              <Badge variant="secondary">AI Content Ops</Badge>
+              <Badge variant="secondary">Workflow Design</Badge>
               <Badge variant="secondary">SEO</Badge>
-              <Badge variant="secondary">Marketing Analytics</Badge>
-              <Badge variant="secondary">Team Leadership</Badge>
+              <Badge variant="secondary">Marketing Execution</Badge>
+              <Badge variant="secondary">Bilingual (EN/ES)</Badge>
             </div>
           </div>
 
@@ -49,26 +50,26 @@ export function SplitFeature() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-2">Recent Achievement</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Led digital event campaign generating 500+ leads with industry experts from VTEX and Shopify
+              Designed AI-integrated content pipelines for SaaS products, reducing production cycles while maintaining editorial quality at scale
             </p>
           </div>
         </div>
 
-        {/* See More CTA */}
         <div className="flex justify-end mt-4">
-          <a
-            href="/resume"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors group"
-          >
-            See more
-            <svg
-              className="w-4 h-4 transition-transform group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <a href="/resume">
+            <button
+              className="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-full bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 transition-all shadow-md group"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+              See more
+              <svg
+                className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </a>
         </div>
       </div>

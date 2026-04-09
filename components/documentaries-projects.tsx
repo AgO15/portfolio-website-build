@@ -12,7 +12,7 @@ export function DocumentariesProjects() {
       <div className="mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Documentaries</h2>
         <p className="text-lg text-muted-foreground">
-          Capturing compelling sport stories through storytelling.
+          Developing my storytelling skills through stories of the game
         </p>
       </div>
 

@@ -64,7 +64,7 @@ export function TechProjects() {
                 size="sm"
                 className="text-white hover:text-white rounded-full bg-white/5 hover:bg-white/15 transition-all pl-4 pr-3 py-5"
               >
-                <span className="font-semibold text-sm">View Project</span>
+                <span className="font-semibold text-sm">Check Projects</span>
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

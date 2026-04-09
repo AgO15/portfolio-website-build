@@ -9,10 +9,10 @@ export function Hero() {
 
       <div className="mt-16 md:mt-24 mb-12 max-w-4xl">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          I turn complex products into stories that convert.
+          I build content systems that run on AI and human judgment.
         </h1>
         <p className="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-          Bilingual content strategist helping SaaS and B2B teams grow through SEO, CRO, and content systems.
+          End-to-end content operations for SaaS and B2B teams — strategy, workflow design, execution, and iteration. Bilingual. Systematic. Built to scale.
         </p>
       </div>
 

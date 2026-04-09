@@ -53,9 +53,9 @@ export const projects: Project[] = [
   },
   {
     slug: "tech-writing",
-    title: "Tech Content I've Produced",
+    title: "Previous Work",
     category: "tech",
-    oneLiner: "A sneak peak of what I've done.",
+    oneLiner: "Pre-AI and AI-Assisted content",
     role: "Content Strategist & Writer",
     year: "2024",
     cover: "/Gemini_Generated_Image_ubwxtdubwxtdubwx.png",

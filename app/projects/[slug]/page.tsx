@@ -61,8 +61,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="mb-12">
         {project.slug === "tech-writing" ? (
           <>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">Tech Content I've Produced</h1>
-            <p className="text-xl text-muted-foreground mb-6">A sneak peak of what I've done.</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">Previous Work</h1>
+            <p className="text-xl text-muted-foreground mb-6">Pre-AI and AI-Assisted content</p>
           </>
         ) : (
           <>
