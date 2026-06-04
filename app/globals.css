@@ -160,6 +160,18 @@
   }
 }
 
+/* Under-construction popup entrance */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* User-defined Custom Base Props from Spec mapped to Tailwind definitions */
 :root {
   --color-border-tertiary: var(--border);
