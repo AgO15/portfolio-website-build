@@ -7,7 +7,7 @@ export function Footer() {
 
       <div className="flex items-center gap-4">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/agnysorellana"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

@@ -8,12 +8,12 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Agnys — Software & Storytelling",
-  description: "Building products and producing documentaries. Systems + stories.",
+  title: "Agnys Orellana — B2B Content & AI Content Systems",
+  description: "I build content systems that run on AI and human judgment. End-to-end content operations for SaaS and B2B teams, in English and Spanish.",
   generator: "v0.app",
   openGraph: {
-    title: "Agnys — Software & Storytelling",
-    description: "Building products and producing documentaries. Systems + stories.",
+    title: "Agnys Orellana — B2B Content & AI Content Systems",
+    description: "I build content systems that run on AI and human judgment. End-to-end content operations for SaaS and B2B teams, in English and Spanish.",
     type: "website",
   },
   icons: {

@@ -24,7 +24,7 @@ export function Hero() {
       {/* Social links */}
       <div className="flex items-center gap-4 mt-12">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/agnysorellana"
           target="_blank"
           rel="noopener noreferrer"
           className="h-10 px-4 rounded-full bg-zinc-800 hover:bg-zinc-700 flex items-center justify-center text-white transition-colors gap-2 group"

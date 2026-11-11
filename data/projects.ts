@@ -24,10 +24,6 @@ export const projects: Project[] = [
     role: "Product Builder (Learning in Public)",
     year: "2025",
     cover: "/life_os_carousel_cover.png",
-    links: [
-      { label: "Visit Site", href: "#" },
-      { label: "GitHub", href: "#" },
-    ],
     highlights: [
       "Foundations: Shipped v0.1.0 of an AI-assisted personal project manager focusing on tasks, notes, files, and weekly time reporting.",
       "Infrastructure: Implemented secure, server-side authentication and Row Level Security on a relational Supabase schema.",
@@ -76,7 +72,6 @@ export const projects: Project[] = [
     role: "Producer",
     year: "2025",
     cover: "/bayern-munich-player.jpg",
-    links: [{ label: "Watch Series", href: "#" }],
     highlights: [
       "Third part of an N-part series exploring football history by digging into the La Septima hunt by Real Madrid",
       "10+ hours of footage edited into 10-minute narrative",

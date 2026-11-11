@@ -22,7 +22,7 @@ export function SplitFeature() {
           {/* Experience */}
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-2">Experience</h4>
-            <p className="text-2xl font-bold text-foreground">5+ Years</p>
+            <p className="text-2xl font-bold text-foreground">6+ Years</p>
             <p className="text-sm text-muted-foreground">Content Operations & AI-Assisted Workflows</p>
           </div>
 
@@ -50,7 +50,7 @@ export function SplitFeature() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-2">Recent Achievement</h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Designed AI-integrated content pipelines for SaaS products, reducing production cycles while maintaining editorial quality at scale
+              Built the Claude-based content system a two-person marketing team uses to ship in three languages: shared brand voice, review gates, a facts ledger and a producer-and-reviewer agent loop
             </p>
           </div>
         </div>

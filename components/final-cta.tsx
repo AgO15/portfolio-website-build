@@ -16,8 +16,9 @@ export function FinalCTA() {
           size="lg"
           variant="outline"
           className="rounded-full"
+          asChild
         >
-          See projects
+          <a href="#tech">See projects</a>
         </Button>
       </div>
     </section>
