@@ -26,7 +26,7 @@ export const projects: Project[] = [
     category: "case",
     oneLiner:
       "Claude skills, a facts ledger, a native-language gate and a producer-and-reviewer agent loop that let a two-person team ship in English, Spanish and Portuguese.",
-    role: "BNamericas",
+    role: "Cartavia (name changed)",
     year: "2026",
     cover: "",
     stat: {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     category: "case",
     oneLiner:
       "Message architecture, objection handling, sales enablement, segmented email, in-app messaging and LinkedIn for the AI Assistant, the Forecast relaunch and the MCP Connector.",
-    role: "BNamericas",
+    role: "Cartavia (name changed)",
     year: "2026",
     cover: "",
     stat: {
