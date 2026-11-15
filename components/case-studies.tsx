@@ -2,6 +2,17 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { projects } from "@/data/projects"
 
+const alsoBuilt = [
+  {
+    title: "Campaign simulator",
+    text: "An interactive tool that takes a brief through segments to every piece at real size, checked against format limits. Approvers see each piece as it will look before they sign off.",
+  },
+  {
+    title: "Social media strategy",
+    text: "An audit of LinkedIn and Instagram that became seven content series with written selection criteria, C-level reporting and lead attribution in the CRM.",
+  },
+]
+
 export function CaseStudies() {
   const cases = projects.filter((p) => p.category === "case")
   if (cases.length === 0) return null
@@ -40,6 +51,18 @@ export function CaseStudies() {
             )}
           </Link>
         ))}
+      </div>
+
+      <div className="mt-12">
+        <h3 className="text-xl font-semibold mb-6">Also built at BNamericas</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          {alsoBuilt.map((item) => (
+            <div key={item.title} className="rounded-2xl bg-card border border-border p-6">
+              <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
+              <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

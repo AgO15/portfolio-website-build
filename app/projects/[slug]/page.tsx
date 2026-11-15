@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { TechContentView } from "@/components/tech-content-view"
 import { VideoCarousel } from "@/components/video-carousel"
 import { AiContentSystemCase } from "@/components/cases/ai-content-system"
+import { ProductLaunchesCase } from "@/components/cases/product-launches"
 import type { Metadata } from "next"
 
 interface ProjectPageProps {
@@ -331,6 +332,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         )}
 
         {project.slug === "ai-content-system" && <AiContentSystemCase />}
+        {project.slug === "product-launches" && <ProductLaunchesCase />}
 
         {/* Tech Writing Spec Rendering via TechContentView Client Component */}
         {project.slug === "tech-writing" && (

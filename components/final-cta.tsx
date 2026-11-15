@@ -7,7 +7,7 @@ export function FinalCTA() {
       <div className="flex flex-wrap items-center justify-center gap-4">
         <Button size="lg" className="rounded-full" asChild>
           <a href="https://www.linkedin.com/in/agnysorellana" target="_blank" rel="noopener noreferrer">
-            <span>Contact</span>
+            <span>Contact on LinkedIn</span>
             <ArrowRight className="w-4 h-4 ml-2" />
           </a>
         </Button>
@@ -18,7 +18,7 @@ export function FinalCTA() {
           className="rounded-full"
           asChild
         >
-          <a href="#work">See projects</a>
+          <a href="mailto:agnysorellana@gmail.com">Email me</a>
         </Button>
       </div>
     </section>

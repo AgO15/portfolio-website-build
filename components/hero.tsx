@@ -18,7 +18,7 @@ export function Hero() {
 
       {/* Background visual - decorative image area */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[600px] opacity-20 pointer-events-none">
-        <img src="/Gemini_Generated_Image_qn5ruoqn5ruoqn5r.png" alt="" className="w-full h-full object-cover" />
+        <img src="/hero-bg.webp" alt="" className="w-full h-full object-cover" />
       </div>
 
       {/* Social links */}

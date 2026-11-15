@@ -35,13 +35,27 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "product-launches",
+    title: "Product launches in three languages",
+    category: "case",
+    oneLiner:
+      "Message architecture, objection handling, sales enablement, segmented email, in-app messaging and LinkedIn for the AI Assistant, the Forecast relaunch and the MCP Connector.",
+    role: "BNamericas",
+    year: "2026",
+    cover: "",
+    stat: {
+      value: "3",
+      label: "launches shipped in English, Spanish and Portuguese, with a fourth in progress",
+    },
+  },
+  {
     slug: "distributed-vision-platform",
     title: "Life OS (formerly Personal Project Management App)",
     category: "tech",
     oneLiner: "A Neumorphic Personal Operating System for Cognitive & Financial Management",
     role: "Product Builder (Learning in Public)",
     year: "2025",
-    cover: "/life_os_carousel_cover.png",
+    cover: "/cover-life-os.webp",
     highlights: [
       "Foundations: Shipped v0.1.0 of an AI-assisted personal project manager focusing on tasks, notes, files, and weekly time reporting.",
       "Infrastructure: Implemented secure, server-side authentication and Row Level Security on a relational Supabase schema.",
@@ -72,7 +86,7 @@ export const projects: Project[] = [
     oneLiner: "Pre-AI and AI-Assisted content",
     role: "Content Strategist & Writer",
     year: "2024",
-    cover: "/Gemini_Generated_Image_ubwxtdubwxtdubwx.png",
+    cover: "/cover-writing-samples.webp",
     links: [
       { label: "Download Guide", href: "/cio-guide-3-keys.pdf" },
     ],
