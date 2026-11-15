@@ -1,5 +1,3 @@
-import { FactLedgerDemo } from "@/components/fact-ledger-demo"
-
 // Source of truth for every claim on this page: CV_EN.md (v2). No internal BNamericas figures.
 
 const built = [
@@ -43,12 +41,18 @@ export function AiContentSystemCase() {
         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
           <p>
             BNamericas sells B2B market intelligence on infrastructure, energy and mining projects across Latin
-            America. Marketing is a team of two, and every launch and campaign ships in English, Spanish and
-            Portuguese.
+            America. Marketing is a team of two that serves Sales, Renewals and Product, and everything ships in
+            English, Spanish and Portuguese.
           </p>
           <p>
-            Two things did not scale. Spanish output read like translation, and brand voice and verified figures
-            lived in people&apos;s heads, so every correction had to be remembered by whoever wrote the next piece.
+            The workload did not fit the team. A roadmap of 40 items and product launches back to back, each one
+            needing message architecture, sales material, segmented emails, in-app messages and LinkedIn posts,
+            multiplied by three languages. Written by hand, that volume forces a choice between speed and quality.
+          </p>
+          <p>
+            The goal was a system where people spend their time on what needs judgment (the angle, the edit, the
+            final check) and everything else is produced to the same standard every time: one brand voice, only
+            verified figures, and each language written to read as native.
           </p>
         </div>
       </section>
@@ -102,15 +106,6 @@ export function AiContentSystemCase() {
           adapting into three languages, which used to take most of the time per piece, is done by the system. It
           is my own estimate against writing by hand, not a measured figure yet.
         </p>
-      </section>
-
-      <section>
-        <h2 className="text-3xl font-bold text-foreground mb-2">Try the facts ledger</h2>
-        <p className="text-muted-foreground mb-6 max-w-3xl">
-          This is the check every draft goes through. The sample uses Acme Billing, a fictional company from my own
-          project PCS Kit, so no BNamericas content is shown.
-        </p>
-        <FactLedgerDemo />
       </section>
     </>
   )

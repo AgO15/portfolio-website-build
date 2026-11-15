@@ -28,7 +28,7 @@ export function CaseStudies() {
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">{project.title}</h3>
               <p className="text-lg text-zinc-300 leading-relaxed max-w-2xl">{project.oneLiner}</p>
               <span className="inline-flex items-center gap-2 mt-8 text-sm font-semibold text-white">
-                Read the case and try the demo
+                Read the case
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </span>
             </div>
