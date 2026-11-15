@@ -5,6 +5,7 @@ import { projects, type Project } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
 import { TechContentView } from "@/components/tech-content-view"
 import { VideoCarousel } from "@/components/video-carousel"
+import { AiContentSystemCase } from "@/components/cases/ai-content-system"
 import type { Metadata } from "next"
 
 interface ProjectPageProps {
@@ -67,7 +68,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         ) : (
           <>
             <div className="flex items-center gap-3 mb-4">
-              <Badge>{project.category}</Badge>
+              <Badge>{project.category === "case" ? "Case study" : project.category}</Badge>
               {project.year && <span className="text-sm text-muted-foreground">{project.year}</span>}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{project.title}</h1>
@@ -77,13 +78,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground">
-            Role: <span className="font-medium text-foreground">{project.role}</span>
+            {project.category === "case" ? "Company" : "Role"}: <span className="font-medium text-foreground">{project.role}</span>
           </span>
         </div>
       </div>
 
       {/* Video/Cover */}
-      {project.slug === "distributed-vision-platform" ? (
+      {project.category === "case" ? null : project.slug === "distributed-vision-platform" ? (
         <VideoCarousel />
       ) : project.category === "docs" && project.links && project.links[0]?.href.includes("youtube.com") ? (
         <div className="rounded-[2rem] overflow-hidden mb-12 border border-border shadow-lg">
@@ -328,6 +329,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </section>
           </>
         )}
+
+        {project.slug === "ai-content-system" && <AiContentSystemCase />}
 
         {/* Tech Writing Spec Rendering via TechContentView Client Component */}
         {project.slug === "tech-writing" && (

@@ -1,4 +1,4 @@
-export type ProjectCategory = "tech" | "docs"
+export type ProjectCategory = "case" | "tech" | "docs"
 
 export interface Project {
   slug: string
@@ -13,9 +13,27 @@ export interface Project {
     href: string
   }[]
   highlights?: string[]
+  stat?: {
+    value: string
+    label: string
+  }
 }
 
 export const projects: Project[] = [
+  {
+    slug: "ai-content-system",
+    title: "An AI content system for a marketing team of two",
+    category: "case",
+    oneLiner:
+      "Claude skills, a facts ledger, a native-language gate and a producer-and-reviewer agent loop that let a two-person team ship in English, Spanish and Portuguese.",
+    role: "BNamericas",
+    year: "2026",
+    cover: "",
+    stat: {
+      value: "~70%",
+      label: "less production time per piece (estimate)",
+    },
+  },
   {
     slug: "distributed-vision-platform",
     title: "Life OS (formerly Personal Project Management App)",

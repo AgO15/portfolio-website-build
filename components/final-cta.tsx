@@ -18,7 +18,7 @@ export function FinalCTA() {
           className="rounded-full"
           asChild
         >
-          <a href="#tech">See projects</a>
+          <a href="#work">See projects</a>
         </Button>
       </div>
     </section>
