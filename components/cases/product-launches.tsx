@@ -1,6 +1,6 @@
 import { LaunchExplorer } from "@/components/launch-explorer"
 
-// Source of truth for every claim on this page: CV_EN.md (v2). No internal company figures. The company name is a pseudonym.
+// Source of truth for every claim on this page: CV_EN.md (v2). No internal BNamericas figures.
 
 const method = [
   { title: "Message architecture", text: "One core message per launch, broken down by audience before any piece is written." },
@@ -18,7 +18,7 @@ export function ProductLaunchesCase() {
         <h2 className="text-3xl font-bold text-foreground mb-6">The problem</h2>
         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
           <p>
-            Cartavia (the company is real; the name is changed) added AI to its market-intelligence platform in 2026, and each new product needed its own
+            BNamericas added AI to its market-intelligence platform in 2026, and each new product needed its own
             launch: an AI Assistant, a relaunched Forecast and an MCP Connector, with a fourth launch in progress.
           </p>
           <p>

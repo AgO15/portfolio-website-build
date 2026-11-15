@@ -54,7 +54,7 @@ export function CaseStudies() {
       </div>
 
       <div className="mt-12">
-        <h3 className="text-xl font-semibold mb-6">Also built at Cartavia</h3>
+        <h3 className="text-xl font-semibold mb-6">Also built at BNamericas</h3>
         <div className="grid md:grid-cols-2 gap-6">
           {alsoBuilt.map((item) => (
             <div key={item.title} className="rounded-2xl bg-card border border-border p-6">

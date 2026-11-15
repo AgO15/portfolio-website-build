@@ -1,4 +1,4 @@
-// Source of truth for every claim on this page: CV_EN.md (v2). No internal company figures. The company name is a pseudonym.
+// Source of truth for every claim on this page: CV_EN.md (v2). No internal BNamericas figures.
 
 const built = [
   {
@@ -40,7 +40,7 @@ export function AiContentSystemCase() {
         <h2 className="text-3xl font-bold text-foreground mb-6">The problem</h2>
         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
           <p>
-            Cartavia (the company is real; the name is changed) sells B2B market intelligence on infrastructure, energy and mining projects across Latin
+            BNamericas sells B2B market intelligence on infrastructure, energy and mining projects across Latin
             America. Marketing is a team of two that serves Sales, Renewals and Product, and everything ships in
             English, Spanish and Portuguese.
           </p>
