@@ -10,7 +10,7 @@ export function DocumentariesProjects() {
   return (
     <section id="documentaries" className="section-padding scroll-mt-24">
       <div className="mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Documentaries</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Side Project: Documentaries</h2>
         <p className="text-lg text-muted-foreground">
           Developing my storytelling skills through stories of the game
         </p>

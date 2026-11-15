@@ -7,6 +7,7 @@ import { TechContentView } from "@/components/tech-content-view"
 import { VideoCarousel } from "@/components/video-carousel"
 import { AiContentSystemCase } from "@/components/cases/ai-content-system"
 import { ProductLaunchesCase } from "@/components/cases/product-launches"
+import { PcsKitCase } from "@/components/cases/pcs-kit"
 import type { Metadata } from "next"
 
 interface ProjectPageProps {
@@ -63,8 +64,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="mb-12">
         {project.slug === "tech-writing" ? (
           <>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">Previous Work</h1>
-            <p className="text-xl text-muted-foreground mb-6">Pre-AI and AI-Assisted content</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{project.title}</h1>
+            <p className="text-xl text-muted-foreground mb-6">{project.oneLiner}</p>
           </>
         ) : (
           <>
@@ -79,7 +80,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground">
-            {project.category === "case" ? "Company" : "Role"}: <span className="font-medium text-foreground">{project.role}</span>
+            {project.category === "case" ? "For" : "Role"}: <span className="font-medium text-foreground">{project.role}</span>
           </span>
         </div>
       </div>
@@ -333,6 +334,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         {project.slug === "ai-content-system" && <AiContentSystemCase />}
         {project.slug === "product-launches" && <ProductLaunchesCase />}
+        {project.slug === "pcs-kit" && <PcsKitCase />}
 
         {/* Tech Writing Spec Rendering via TechContentView Client Component */}
         {project.slug === "tech-writing" && (

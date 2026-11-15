@@ -5,14 +5,16 @@ import { Badge } from "@/components/ui/badge"
 import { projects } from "@/data/projects"
 
 export function TechProjects() {
-  const techProjects = projects.filter((p) => p.category === "tech")
+  const techProjects = projects
+    .filter((p) => p.category === "tech")
+    .sort((a, b) => Number(b.slug === "tech-writing") - Number(a.slug === "tech-writing"))
 
   return (
     <section id="tech" className="section-padding scroll-mt-24">
       <div className="mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Tech-Related Projects</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">More Work</h2>
         <p className="text-lg text-muted-foreground">
-          Creating, building and learning every step of the way.
+          Writing samples, and a product I built to learn by building.
         </p>
       </div>
 
@@ -64,7 +66,7 @@ export function TechProjects() {
                 size="sm"
                 className="text-white hover:text-white rounded-full bg-white/5 hover:bg-white/15 transition-all pl-4 pr-3 py-5"
               >
-                <span className="font-semibold text-sm">Check Projects</span>
+                <span className="font-semibold text-sm">Open</span>
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

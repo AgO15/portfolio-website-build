@@ -49,6 +49,20 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "pcs-kit",
+    title: "PCS Kit: a B2B content method packaged for Claude",
+    category: "case",
+    oneLiner:
+      "Brand onboarding, a voice skill built from your own best work, a facts ledger and a production loop with checkpoints, in a kit one person can set up alone.",
+    role: "Own product",
+    year: "2026",
+    cover: "",
+    stat: {
+      value: "~2 h",
+      label: "from opening the kit to the first brief",
+    },
+  },
+  {
     slug: "distributed-vision-platform",
     title: "Life OS (formerly Personal Project Management App)",
     category: "tech",
@@ -81,9 +95,9 @@ export const projects: Project[] = [
   },
   {
     slug: "tech-writing",
-    title: "Previous Work",
+    title: "Writing Samples",
     category: "tech",
-    oneLiner: "Pre-AI and AI-Assisted content",
+    oneLiner: "SEO articles and a CIO guide written for B2B SaaS, FinTech and health tech",
     role: "Content Strategist & Writer",
     year: "2024",
     cover: "/cover-writing-samples.webp",
