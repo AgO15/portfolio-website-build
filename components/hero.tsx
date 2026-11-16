@@ -17,7 +17,13 @@ export function Hero() {
       </div>
 
       {/* Background visual - decorative image area */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[600px] opacity-20 pointer-events-none">
+      <div
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-full md:w-3/5 h-[600px] opacity-20 pointer-events-none"
+        style={{
+          WebkitMaskImage: "radial-gradient(ellipse at 70% 50%, black 30%, transparent 75%)",
+          maskImage: "radial-gradient(ellipse at 70% 50%, black 30%, transparent 75%)",
+        }}
+      >
         <img src="/hero-bg.webp" alt="" className="w-full h-full object-cover" />
       </div>
 

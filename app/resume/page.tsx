@@ -235,7 +235,7 @@ export default function ResumePage() {
                             <h3 className="text-lg font-semibold text-foreground mb-3">{skill.group}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {skill.items.map((item) => (
-                                    <Badge key={item} variant="secondary">
+                                    <Badge key={item} variant="secondary" className="max-w-full whitespace-normal text-left">
                                         {item}
                                     </Badge>
                                 ))}
