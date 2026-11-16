@@ -21,7 +21,7 @@ export function Navbar() {
           Resume
         </Link>
       <Button size="sm" className="rounded-full" asChild>
-        <a href="https://www.linkedin.com/in/agnysorellana" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="https://www.linkedin.com/in/agnysorellana" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </Button>
       </div>
     </nav>
