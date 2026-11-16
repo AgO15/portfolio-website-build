@@ -52,7 +52,7 @@ const experience = [
     {
         title: "Content Marketing Strategist / AI Content",
         company: "Freelance • Remote",
-        dates: "Oct 2019 - Jul 2026",
+        dates: "Oct 2019 - Aug 2026",
         bullets: [
             "Conteo (B2B SaaS / FinTech): designed an SEO content strategy around Spain's VeriFactu e-invoicing rules and wrote 25+ technical articles in MDX with AI workflows, turning tax and legal detail into plain guidance for freelancers and SMEs.",
             "Health SaaS (growth): rebuilt the content strategy after a manual SEO audit, then scaled production with AI and programmatic tools; new visitors grew 289% year over year (70,000+ new visitors).",
