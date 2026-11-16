@@ -15,7 +15,7 @@ export function SplitFeature() {
       </div>
 
       {/* Right column - Resume Preview */}
-      <div className="relative flex flex-col lg:pl-12 h-[500px]">
+      <div className="relative flex flex-col lg:pl-12 lg:min-h-[500px]">
         <p className="text-xs uppercase tracking-wider text-muted-foreground mb-6">Resume Highlights</p>
 
         <div className="flex-1 space-y-6">
