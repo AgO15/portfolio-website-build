@@ -30,9 +30,34 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     }
   }
 
+  const title = `${project.title} — Agnys Orellana`
+  const url = `/projects/${project.slug}`
+  const image = {
+    url: "/og-image.png",
+    width: 1200,
+    height: 630,
+    alt: "Agnys Orellana — B2B content systems that run on AI and human judgment",
+  }
+
   return {
-    title: `${project.title} — Agnys`,
+    title,
     description: project.oneLiner,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description: project.oneLiner,
+      url,
+      siteName: "Agnys Orellana",
+      locale: "en_US",
+      type: "article",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: project.oneLiner,
+      images: [image.url],
+    },
   }
 }
 

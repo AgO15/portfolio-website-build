@@ -9,6 +9,22 @@ export const metadata: Metadata = {
     title: "Resume — Agnys Orellana",
     description:
         "B2B content marketer with 6+ years writing and running content for technical audiences in English and Spanish, now building AI content systems.",
+    alternates: { canonical: "/resume" },
+    openGraph: {
+        title: "Resume — Agnys Orellana",
+        description:
+            "B2B content marketer with 6+ years writing and running content for technical audiences in English and Spanish, now building AI content systems.",
+        url: "/resume",
+        siteName: "Agnys Orellana",
+        locale: "en_US",
+        type: "profile",
+        images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Agnys Orellana — B2B content systems that run on AI and human judgment" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Resume — Agnys Orellana",
+        images: ["/og-image.png"],
+    },
 }
 
 const stats = [
