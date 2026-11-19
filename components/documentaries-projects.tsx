@@ -63,7 +63,7 @@ export function DocumentariesProjects() {
                 </Badge>
               )}
               <h3 className="text-2xl font-bold text-white mb-2 leading-tight">{project.title}</h3>
-              <p className="text-sm sm:text-base text-zinc-300 leading-relaxed mb-6 line-clamp-3">
+              <p className="text-sm sm:text-base text-zinc-300 leading-relaxed mb-6 line-clamp-4 sm:line-clamp-3">
                 {project.oneLiner}
               </p>
 

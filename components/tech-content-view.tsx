@@ -330,7 +330,7 @@ export function TechContentView() {
                       </span>
                     </div>
                     <p className="text-white text-xl sm:text-2xl font-bold leading-snug drop-shadow-md">EAM: 3 Keys to Understanding Enterprise Asset Management</p>
-                    <p className="text-gray-200 mt-3 text-sm line-clamp-3 drop-shadow-sm">
+                    <p className="text-gray-200 mt-3 text-sm drop-shadow-sm">
                       An overview of how enterprises use asset management to drive efficiency and strategic value across
                       operations and infrastructure.
                     </p>
