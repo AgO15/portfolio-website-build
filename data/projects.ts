@@ -1,5 +1,16 @@
 export type ProjectCategory = "case" | "tech" | "docs"
 
+// What visitors see instead of the internal category key
+export const categoryLabel: Record<ProjectCategory, string> = {
+  case: "Case study",
+  tech: "Project",
+  docs: "Documentary",
+}
+
+export function hasVideo(project: Project): boolean {
+  return Boolean(project.links?.some((link) => link.href.includes("youtube.com")))
+}
+
 export interface Project {
   slug: string
   title: string

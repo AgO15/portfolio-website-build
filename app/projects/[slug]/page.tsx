@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
-import { projects, type Project } from "@/data/projects"
+import { projects, categoryLabel, type Project } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
 import { TechContentView } from "@/components/tech-content-view"
 import { VideoCarousel } from "@/components/video-carousel"
@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         ) : (
           <>
             <div className="flex items-center gap-3 mb-4">
-              <Badge>{project.category === "case" ? "Case study" : project.category}</Badge>
+              <Badge>{categoryLabel[project.category]}</Badge>
               {project.year && <span className="text-sm text-muted-foreground">{project.year}</span>}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{project.title}</h1>

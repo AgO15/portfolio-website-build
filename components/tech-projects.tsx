@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { projects } from "@/data/projects"
+import { projects, categoryLabel } from "@/data/projects"
 
 export function TechProjects() {
   const techProjects = projects
@@ -39,7 +39,7 @@ export function TechProjects() {
             {/* Top row: Category and Year tags */}
             <div className="relative z-10 flex items-start justify-between">
               <Badge className="bg-white/20 text-white border-transparent uppercase tracking-wider text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-md">
-                {project.category}
+                {categoryLabel[project.category]}
               </Badge>
               {project.year && (
                 <span className="text-sm font-medium text-zinc-300 bg-black/40 px-3 py-1 rounded-full backdrop-blur-md">

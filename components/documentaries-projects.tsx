@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, Play } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { projects } from "@/data/projects"
+import { projects, categoryLabel, hasVideo } from "@/data/projects"
 
 export function DocumentariesProjects() {
   const docProjects = projects.filter((p) => p.category === "docs")
@@ -34,17 +34,19 @@ export function DocumentariesProjects() {
             {/* Smooth Gradient Overlay for text readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/95 via-zinc-900/50 to-transparent pointer-events-none" />
 
-            {/* Play Button Overlay */}
+            {/* Play Button Overlay (only when there is a video to watch) */}
+            {hasVideo(project) && (
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none">
               <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
                 <Play className="w-6 h-6 text-white fill-white ml-1" />
               </div>
             </div>
+            )}
 
             {/* Top row: Category and Year tags */}
             <div className="relative z-10 flex items-start justify-between">
               <Badge className="bg-white/20 text-white border-transparent uppercase tracking-wider text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-md">
-                {project.category}
+                {categoryLabel[project.category]}
               </Badge>
               {project.year && (
                 <span className="text-sm font-medium text-zinc-300 bg-black/40 px-3 py-1 rounded-full backdrop-blur-md">
@@ -66,7 +68,7 @@ export function DocumentariesProjects() {
               </p>
 
               <span className="inline-flex items-center text-white rounded-full bg-white/5 group-hover:bg-white/15 transition-all pl-4 pr-3 py-2.5">
-                <span className="font-semibold text-sm">Watch Now</span>
+                <span className="font-semibold text-sm">{hasVideo(project) ? "Watch now" : "Open"}</span>
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </span>
             </div>
