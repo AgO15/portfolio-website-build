@@ -472,3 +472,13 @@
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
+
+/* Visible keyboard focus on every interactive element (light pages and dark cards) */
+a:focus-visible,
+button:focus-visible,
+[role="tab"]:focus-visible,
+[tabindex]:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}

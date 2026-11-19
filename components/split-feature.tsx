@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 
 export function SplitFeature() {
@@ -21,14 +22,14 @@ export function SplitFeature() {
         <div className="flex-1 space-y-6">
           {/* Experience */}
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-2">Experience</h4>
+            <h3 className="text-sm font-semibold text-foreground mb-2">Experience</h3>
             <p className="text-2xl font-bold text-foreground">6+ Years</p>
             <p className="text-sm text-muted-foreground">Content Operations & AI-Assisted Workflows</p>
           </div>
 
           {/* Key Skills */}
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-2">Core Expertise</h4>
+            <h3 className="text-sm font-semibold text-foreground mb-2">Core Expertise</h3>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary">AI Content Ops</Badge>
               <Badge variant="secondary">Workflow Design</Badge>
@@ -40,7 +41,7 @@ export function SplitFeature() {
 
           {/* Languages */}
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-2">Languages</h4>
+            <h3 className="text-sm font-semibold text-foreground mb-2">Languages</h3>
             <p className="text-sm text-muted-foreground">
               Spanish (Native) • English (C1) • Portuguese (B2)
             </p>
@@ -48,7 +49,7 @@ export function SplitFeature() {
 
           {/* Achievement */}
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-2">Recent Achievement</h4>
+            <h3 className="text-sm font-semibold text-foreground mb-2">Recent Achievement</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Built the Claude-based content system a two-person marketing team uses to ship in three languages: shared brand voice, review gates, a facts ledger and a producer-and-reviewer agent loop
             </p>
@@ -56,12 +57,13 @@ export function SplitFeature() {
         </div>
 
         <div className="flex justify-end mt-4">
-          <a href="/resume">
-            <button
-              className="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-full bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 transition-all shadow-md group"
-            >
-              See more
+          <Link
+            href="/resume"
+            className="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-full bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200 transition-all shadow-md group"
+          >
+              See the full resume
               <svg
+                aria-hidden="true"
                 className="w-4 h-4 transition-transform group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
@@ -69,8 +71,7 @@ export function SplitFeature() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

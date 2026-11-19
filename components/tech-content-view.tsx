@@ -2,6 +2,16 @@
 
 import React, { useState, useEffect, useRef } from "react"
 
+// Lets clickable cards and controls work with Enter and Space, not only the mouse
+function onEnterOrSpace(action: () => void) {
+  return (event: React.KeyboardEvent) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault()
+      action()
+    }
+  }
+}
+
 const taxTechArticles = [
   {
     title: "Quipu vs Holded vs Conteo: comparativa para autónomos (2026)",
@@ -250,6 +260,11 @@ export function TechContentView() {
           <div 
             className={`absolute left-2 lg:-left-6 xl:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[var(--color-background-primary)] border border-[var(--color-border-tertiary)] shadow-md transition-all text-[var(--color-text-secondary)] ${carIdx === 0 ? "opacity-0 pointer-events-none" : "cursor-pointer hover:bg-[var(--color-background-secondary)]"}`}
             onClick={handlePrevCar}
+            onKeyDown={onEnterOrSpace(handlePrevCar)}
+            role="button"
+            tabIndex={carIdx === 0 ? -1 : 0}
+            aria-hidden={carIdx === 0}
+            aria-label="Previous sample"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
           </div>
@@ -265,6 +280,9 @@ export function TechContentView() {
               <div 
                 className="c-card relative group/card cursor-pointer overflow-hidden border border-[var(--color-border-tertiary)] bg-[var(--color-background-tertiary)] h-full min-h-[360px] sm:min-h-[420px]"
                 onClick={() => setIsPdfModalOpen(true)}
+                onKeyDown={onEnterOrSpace(() => setIsPdfModalOpen(true))}
+                role="button"
+                tabIndex={0}
                 title="Click to view full Deck"
               >
                 <div className="w-full h-full absolute inset-0 bg-black">
@@ -290,6 +308,9 @@ export function TechContentView() {
               <div 
                 className="c-card relative group/card cursor-pointer overflow-hidden border border-[var(--color-border-tertiary)] h-full min-h-[360px] sm:min-h-[420px]"
                 onClick={() => setIsArticleModalOpen(true)}
+                onKeyDown={onEnterOrSpace(() => setIsArticleModalOpen(true))}
+                role="button"
+                tabIndex={0}
                 title="Click to read full article"
               >
                 <div className="w-full h-full bg-zinc-800 absolute inset-0">
@@ -324,6 +345,11 @@ export function TechContentView() {
         <div 
           className={`absolute right-2 lg:-right-6 xl:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[var(--color-background-primary)] border border-[var(--color-border-tertiary)] shadow-md transition-all text-[var(--color-text-secondary)] ${carIdx === 1 ? "opacity-0 pointer-events-none" : "cursor-pointer hover:bg-[var(--color-background-secondary)]"}`}
           onClick={handleNextCar}
+          onKeyDown={onEnterOrSpace(handleNextCar)}
+          role="button"
+          tabIndex={carIdx === 1 ? -1 : 0}
+          aria-hidden={carIdx === 1}
+          aria-label="Next sample"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </div>
@@ -332,8 +358,8 @@ export function TechContentView() {
         {/* Carousel Indicators */}
         <div className="carousel-controls justify-center">
           <div className="car-dots">
-            <div className={`car-dot cursor-pointer ${carIdx === 0 ? "on" : ""}`} onClick={() => setCarIdx(0)}></div>
-            <div className={`car-dot cursor-pointer ${carIdx === 1 ? "on" : ""}`} onClick={() => setCarIdx(1)}></div>
+            <div className={`car-dot cursor-pointer ${carIdx === 0 ? "on" : ""}`} onClick={() => setCarIdx(0)} aria-hidden="true"></div>
+            <div className={`car-dot cursor-pointer ${carIdx === 1 ? "on" : ""}`} onClick={() => setCarIdx(1)} aria-hidden="true"></div>
           </div>
         </div>
       </section>
@@ -358,12 +384,15 @@ export function TechContentView() {
               className="card cursor-pointer transition-colors hover:bg-[var(--color-background-tertiary)]" 
               key={idx}
               onClick={() => setActiveIframeUrl(article.url)}
+              onKeyDown={onEnterOrSpace(() => setActiveIframeUrl(article.url))}
+              role="button"
+              tabIndex={0}
               title="Read Article"
             >
               <div className="card-thumb rounded-md overflow-hidden bg-zinc-800 flex items-center justify-center">
                 <img 
                   src="/conteo-icon.svg" 
-                  alt="Conteo"
+                  alt=""
                   className="w-8 h-8 opacity-70"
                 />
               </div>
@@ -385,12 +414,15 @@ export function TechContentView() {
               className="card cursor-pointer transition-colors hover:bg-[var(--color-background-tertiary)]" 
               key={idx}
               onClick={() => setActiveIframeUrl(article.url)}
+              onKeyDown={onEnterOrSpace(() => setActiveIframeUrl(article.url))}
+              role="button"
+              tabIndex={0}
               title="Read Article"
             >
               <div className="w-24 h-16 sm:w-28 sm:h-[4.5rem] shrink-0 rounded-md overflow-hidden bg-zinc-100 dark:bg-zinc-800 border border-[var(--color-border-tertiary)] flex items-center justify-center">
                 <img 
                   src={article.thumb} 
-                  alt={article.title}
+                  alt=""
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -433,7 +465,7 @@ export function TechContentView() {
               <div className="max-w-3xl mx-auto">
                 <img 
                   src="/67d2f2aec11554d951962758_Gestion-de-activos-empresariales.jpeg" 
-                  alt="EAM Cover" 
+                  alt="" 
                   className="w-full h-auto rounded-xl mb-8 border border-[var(--color-border-tertiary)]"
                 />
                 
@@ -544,6 +576,7 @@ export function TechContentView() {
               </div>
               <button 
                 onClick={() => setIsPdfModalOpen(false)}
+                aria-label="Close"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--color-background-tertiary)] hover:bg-zinc-700 transition-colors text-[var(--color-text-secondary)] hover:text-white"
               >
                 ✕
@@ -572,6 +605,7 @@ export function TechContentView() {
               </div>
               <button 
                 onClick={() => setActiveIframeUrl(null)}
+                aria-label="Close"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--color-background-tertiary)] hover:bg-zinc-700 transition-colors text-[var(--color-text-secondary)] hover:text-white"
               >
                 ✕

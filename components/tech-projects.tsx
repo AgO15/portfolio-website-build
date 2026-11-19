@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { projects } from "@/data/projects"
 
@@ -29,7 +28,7 @@ export function TechProjects() {
             <div className="absolute inset-0 overflow-hidden">
               <img
                 src={project.cover || "/placeholder.svg"}
-                alt={project.title}
+                alt=""
                 className="w-full h-full object-cover opacity-30 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700 ease-out"
               />
             </div>
@@ -61,14 +60,10 @@ export function TechProjects() {
                 {project.oneLiner}
               </p>
 
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:text-white rounded-full bg-white/5 hover:bg-white/15 transition-all pl-4 pr-3 py-5"
-              >
+              <span className="inline-flex items-center text-white rounded-full bg-white/5 group-hover:bg-white/15 transition-all pl-4 pr-3 py-2.5">
                 <span className="font-semibold text-sm">Open</span>
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-              </Button>
+              </span>
             </div>
           </Link>
         ))}
