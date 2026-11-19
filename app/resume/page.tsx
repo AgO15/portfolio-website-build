@@ -49,7 +49,7 @@ const experience = [
     {
         title: "AI Marketing Communications Specialist",
         company: "BNamericas • Remote",
-        dates: "Aug 2026 - Present",
+        dates: "Aug 2026 – Present",
         context:
             "B2B market intelligence on infrastructure, energy and mining projects across Latin America. Marketing team of two.",
         bullets: [
@@ -68,7 +68,7 @@ const experience = [
     {
         title: "Content Marketing Strategist / AI Content",
         company: "Freelance • Remote",
-        dates: "Oct 2019 - Aug 2026",
+        dates: "Oct 2019 – Aug 2026",
         bullets: [
             "Conteo (B2B SaaS / FinTech): designed an SEO content strategy around Spain's VeriFactu e-invoicing rules and wrote 25+ technical articles in MDX with AI workflows, turning tax and legal detail into plain guidance for freelancers and SMEs.",
             "Health SaaS (growth): rebuilt the content strategy after a manual SEO audit, then scaled production with AI and programmatic tools; new visitors grew 289% year over year (70,000+ new visitors).",
@@ -81,7 +81,7 @@ const experience = [
     {
         title: "Content Creator",
         company: "GB Advisors • Remote (International Contractor)",
-        dates: "Apr 2021 - Jan 2024",
+        dates: "Apr 2021 – Jan 2024",
         bullets: [
             "Wrote bilingual content on IT, ITSM, cloud and digital transformation: blogs, email campaigns, ads, e-books, newsletters, landing pages, webinars and video scripts.",
             "Planned and ran the quarterly content strategy against commercial goals.",
@@ -91,7 +91,7 @@ const experience = [
     {
         title: "Content Marketing Specialist",
         company: "Company Combo / Globalfy • Remote (International Contractor)",
-        dates: "Aug 2021 - Mar 2022",
+        dates: "Aug 2021 – Mar 2022",
         bullets: [
             "Wrote bilingual B2B content for founders setting up US companies: blogs, newsletters, web, ads, email and e-books.",
             "Led content for a five-day online event with speakers from VTEX and Shopify that generated 500+ leads.",
